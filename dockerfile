@@ -6,4 +6,14 @@ COPY Main.jar ./
 
 RUN java --version
 
+RUN sudo apt install nginx
+
+RUN systemctl status nginx
+
+RUN systemctl restart nginx
+
+EXPOSE 80
+
+EXPOSE 8080
+
 ENTRYPOINT [ "java -jar Main.jar" ]
