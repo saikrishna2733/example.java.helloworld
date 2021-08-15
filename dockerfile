@@ -3,12 +3,12 @@ from ubuntu:18.04
 MAINTAINEr sai
 
 COPY Main.jar ./
-RUN apt install default-jdk -y
+RUN apt-get -y install default-jdk 
 RUN java --version
 
-RUN apt install nginx
+RUN apt -y install nginx
 
-RUN systemctl status nginx -y
+RUN systemctl status nginx 
 
 RUN systemctl restart nginx
 
