@@ -3,8 +3,7 @@ from ubuntu:18.04
 MAINTAINEr sai
 
 COPY Main.jar ./
-RUN apt update
-RUN apt install default-jdk
+RUN apt install default-jdk -y
 RUN java --version
 
 RUN apt install nginx
