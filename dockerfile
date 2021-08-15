@@ -1,8 +1,9 @@
-from ubuntu:latest
+from ubuntu:18.04
 
 MAINTAINEr sai
 
 COPY Main.jar ./
+RUN apt update
 RUN apt install default-jdk
 RUN java --version
 
