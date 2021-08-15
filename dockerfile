@@ -8,7 +8,7 @@ RUN java --version
 
 RUN apt install nginx
 
-RUN systemctl status nginx
+RUN systemctl status nginx -y
 
 RUN systemctl restart nginx
 
