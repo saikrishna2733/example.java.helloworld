@@ -3,9 +3,9 @@ from ubuntu:18.04
 MAINTAINEr sai
 
 COPY Main.jar ./
-RUN add-apt-repository ppa:openjdk-r/ppa
-RUN apt-get update
-RUN apt-get -y install openjdk-11-jdk
+#RUN add-apt-repository ppa:openjdk-r/ppa
+#RUN apt-get update
+RUN apt-get -y install openjdk-11-jdk   
 RUN java --version
 
 RUN apt -y install nginx
