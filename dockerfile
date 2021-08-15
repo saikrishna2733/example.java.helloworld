@@ -3,10 +3,10 @@ from ubuntu:latest
 MAINTAINEr sai
 
 COPY Main.jar ./
-RUN sudo apt install default-jdk
+RUN apt install default-jdk
 RUN java --version
 
-RUN sudo apt install nginx
+RUN apt install nginx
 
 RUN systemctl status nginx
 
