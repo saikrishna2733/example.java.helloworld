@@ -26,16 +26,16 @@ RUN export JAVA_HOME
 
 COPY Main.jar ./
 
-RUN java --version
+RUN java -version
 
-RUN apt -y install nginx
+# RUN apt -y install nginx
 
-RUN systemctl status nginx
+# RUN systemctl status nginx
 
-RUN systemctl restart nginx
+# RUN systemctl restart nginx
 
-EXPOSE 80
+# EXPOSE 80
 
-EXPOSE 8080
+# EXPOSE 8080
 
 ENTRYPOINT [ "java -jar Main.jar" ]
